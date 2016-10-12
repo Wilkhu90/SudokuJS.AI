@@ -4,7 +4,7 @@
 	var ctx = canvas.getContext('2d');
 	var raf, game, finished = false, nMax = 100, 
 		numOfCells = 30; // Sets difficulty where 30 spots will already be filled
-	
+
 	function main() {
 		game = new Sudoku();
 		game.init();
@@ -216,7 +216,7 @@
 			game.solve([], 0, numOfCells);
 			raf = window.requestAnimationFrame(draw);
 		}
-	})
+	});
 
 	//Main function
 	main();
