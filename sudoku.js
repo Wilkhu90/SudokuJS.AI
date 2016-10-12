@@ -2,7 +2,8 @@
 	
 	var canvas = document.getElementById('game');
 	var ctx = canvas.getContext('2d');
-	var raf, game, finished = false, nMax = 100, numOfCells = 30; // 20 filled spots
+	var raf, game, finished = false, nMax = 100, 
+		numOfCells = 30; // Sets difficulty where 30 spots will already be filled
 	
 	function main() {
 		game = new Sudoku();
